@@ -1,0 +1,396 @@
+# Corrected `index.html` for VIRUNDHU
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>VIRUNDHU – Food Delivered with Love</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <div class="logo">
+        <span class="logo-icon">🍛</span>
+        <div class="logo-text">
+          <span class="logo-name">VIRUNDHU</span>
+          <span class="logo-tagline">விருந்து</span>
+        </div>
+      </div>
+
+      <!-- Location -->
+      <button class="location-bar" id="locationBar" type="button">
+        <span class="loc-icon">📍</span>
+
+        <div class="loc-info">
+          <span class="loc-label">Delivering to</span>
+          <span class="loc-name" id="locationDisplay">
+            Anna Nagar, Chennai
+          </span>
+        </div>
+
+        <span class="loc-chevron">▾</span>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links">
+        <a href="#restaurantsSection" class="nav-link">Restaurants</a>
+        <a href="#offers" class="nav-link">Offers</a>
+        <a href="#footer" class="nav-link">Help</a>
+
+        <button class="btn-sign-in" id="signInBtn" type="button">
+          Sign In
+        </button>
+      </nav>
+
+      <!-- Cart -->
+      <button class="cart-fab" id="cartFab" type="button">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-badge" id="cartBadge">0</span>
+        <span class="cart-amount" id="cartAmount">₹0</span>
+      </button>
+
+      <!-- Mobile Hamburger -->
+      <button class="hamburger" id="hamburger" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#restaurantsSection">Restaurants</a>
+      <a href="#offers">Offers</a>
+      <a href="#footer">Help</a>
+
+      <button id="mobileSignInBtn" type="button">
+        Sign In
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        🎉 Free delivery on first 3 orders
+      </div>
+
+      <h1 class="hero-title">
+        Hunger ends here.
+      </h1>
+
+      <p class="hero-sub">
+        South India's finest food delivered to your doorstep in 30 minutes.
+      </p>
+
+      <!-- Search -->
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search biryani, dosa, pizza..."
+        />
+
+        <button class="search-btn" id="searchBtn" type="button">
+          Search
+        </button>
+      </div>
+
+      <!-- Tags -->
+      <div class="hero-tags">
+        <button class="tag" type="button">🍚 Biryani</button>
+        <button class="tag" type="button">🥞 Dosa</button>
+        <button class="tag" type="button">🍕 Pizza</button>
+        <button class="tag" type="button">🍔 Burgers</button>
+        <button class="tag" type="button">🍮 Desserts</button>
+      </div>
+    </div>
+
+    <!-- Hero Visual -->
+    <div class="hero-visual">
+      <div class="hero-plate">🫕</div>
+    </div>
+  </section>
+
+  <!-- ================= OFFERS ================= -->
+  <section class="offers-strip" id="offers">
+
+    <div class="offers-scroll">
+
+      <div class="offer-card">
+        <span class="offer-tag">NEW</span>
+        <strong>50% OFF</strong> up to ₹100
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">HOT</span>
+        <strong>40% OFF</strong> up to ₹80
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">BANK</span>
+        <strong>30% OFF</strong> with Visa
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">LOCAL</span>
+        <strong>₹60 OFF</strong> South Indian meals
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CATEGORIES ================= -->
+  <section class="categories-section" id="categories">
+
+    <div class="section-header">
+      <h2>What are you craving?</h2>
+      <p>Explore by cuisine</p>
+    </div>
+
+    <div class="categories-grid">
+
+      <div class="category-card">
+        <span>🍚</span>
+        <h3>Biryani</h3>
+      </div>
+
+      <div class="category-card">
+        <span>🥞</span>
+        <h3>Dosa</h3>
+      </div>
+
+      <div class="category-card">
+        <span>🍕</span>
+        <h3>Pizza</h3>
+      </div>
+
+      <div class="category-card">
+        <span>🍔</span>
+        <h3>Burgers</h3>
+      </div>
+
+      <div class="category-card">
+        <span>🍮</span>
+        <h3>Desserts</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FILTERS ================= -->
+  <section class="filters-section">
+
+    <div class="filters-wrap">
+
+      <div class="filter-chips">
+        <button class="chip active" type="button">All</button>
+        <button class="chip" type="button">🌿 Veg</button>
+        <button class="chip" type="button">⭐ 4.0+</button>
+        <button class="chip" type="button">⚡ Fast Delivery</button>
+      </div>
+
+      <div class="sort-wrap">
+        <label for="sortSelect">Sort:</label>
+
+        <select id="sortSelect">
+          <option value="relevance">Relevance</option>
+          <option value="rating">Rating</option>
+          <option value="delivery_time">Delivery Time</option>
+          <option value="cost_low">Cost: Low to High</option>
+          <option value="cost_high">Cost: High to Low</option>
+        </select>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= RESTAURANTS ================= -->
+  <section class="restaurants-section" id="restaurantsSection">
+
+    <div class="section-header">
+      <h2>Top Restaurants Near You</h2>
+      <span class="result-count">12 Restaurants</span>
+    </div>
+
+    <div class="restaurants-grid">
+
+      <!-- Restaurant Card -->
+      <article class="restaurant-card">
+        <div class="restaurant-image">🍛</div>
+
+        <div class="restaurant-content">
+          <h3>Chettinad Virundhu</h3>
+          <p>South Indian • Biryani • Meals</p>
+
+          <div class="restaurant-meta">
+            <span>⭐ 4.5</span>
+            <span>30 mins</span>
+            <span>₹250 for two</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Restaurant Card -->
+      <article class="restaurant-card">
+        <div class="restaurant-image">🍕</div>
+
+        <div class="restaurant-content">
+          <h3>Pizza Hub</h3>
+          <p>Pizza • Italian • Fast Food</p>
+
+          <div class="restaurant-meta">
+            <span>⭐ 4.3</span>
+            <span>25 mins</span>
+            <span>₹400 for two</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Restaurant Card -->
+      <article class="restaurant-card">
+        <div class="restaurant-image">🍔</div>
+
+        <div class="restaurant-content">
+          <h3>Burger Factory</h3>
+          <p>Burgers • Fries • Beverages</p>
+
+          <div class="restaurant-meta">
+            <span>⭐ 4.2</span>
+            <span>20 mins</span>
+            <span>₹300 for two</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="load-more-wrap">
+      <button class="btn-load-more" type="button">
+        Load More Restaurants
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= CART ================= -->
+  <aside class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+      <h3>Your Order</h3>
+
+      <button class="cart-close" id="closeCartBtn" type="button">
+        ✕
+      </button>
+    </div>
+
+    <div class="cart-items">
+      <div class="cart-empty">
+        <span class="cart-empty-icon">🛒</span>
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ================= LOGIN MODAL ================= -->
+  <div class="modal-overlay hidden" id="loginOverlay">
+
+    <div class="login-modal">
+
+      <div class="lm-header">
+        <h3>🍛 Welcome to Virundhu</h3>
+
+        <button id="closeLoginBtn" type="button">
+          ✕
+        </button>
+      </div>
+
+      <div class="login-body">
+
+        <p>
+          Sign in to track orders and get offers.
+        </p>
+
+        <input
+          type="tel"
+          id="phoneInput"
+          placeholder="Enter mobile number"
+          maxlength="10"
+        />
+
+        <button class="btn-otp" type="button">
+          Send OTP
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <h3>🍛 VIRUNDHU</h3>
+
+        <p>
+          South India's premium food delivery service.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Company</h4>
+
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+
+        <a href="#">Help Center</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 Virundhu Technologies Pvt. Ltd.
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script src="app.js"></script>
+</body>
+</html>
+```
+
